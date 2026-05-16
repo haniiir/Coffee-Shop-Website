@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Heighné</title>
+  <meta
+    name="description"
+    content="A premium coffee experience crafted with elegance, warmth, and soul."
+  />
+  <link rel="icon" href="assets/images/icon_gold.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lato:wght@300;400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <img
+          src="assets/images/icon_gold.png"
+          alt="Café Heighné icon"
+          class="brand-logo brand-logo-icon-only"
+        />
+      </a>
+
+      <nav class="nav-links desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#products" class="btn btn-outline btn-nav">Order Now</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#products" class="btn btn-outline mobile-btn">Order Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <img src="assets/images/hero_bg.png" alt="Café interior" />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-lines"></div>
+
+      <div class="container hero-content">
+        <p class="section-overline hero-overline">✦ &nbsp; Premium Coffee Experience &nbsp; ✦</p>
+        <img src="assets/images/logo_gold.png" alt="Café Heighné" class="hero-logo" />
+        <div class="hero-divider">
+          <span></span>
+          <i></i>
+          <span></span>
+        </div>
+        <p class="hero-subtitle">Elevate Your Coffee Experience</p>
+        <p class="hero-text">
+          Where every cup tells a story. Handcrafted with passion, served with grace.
+          A sanctuary for those who appreciate the art of fine coffee.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-gold">View Menu</a>
+          <a href="#about" class="btn btn-glass">Our Story</a>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"><i></i></div>
+      </a>
+    </section>
+
+    <section class="about section-light" id="about">
+      <div class="container">
+        <div class="section-label">
+          <span></span>
+          <p>Our Story</p>
+          <span></span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-visual">
+            <div class="about-main-image">
+              <img src="assets/images/rivera_barista.png" alt="Hanylyn Rivera, founder of Café Heighné" />
+            </div>
+            <div class="about-accent-box"></div>
+          </div>
+
+          <div class="about-copy">
+            <h2>
+              Founded with Vision,
+              <br />
+              <em>Built with Passion</em>
+            </h2>
+
+            <div class="mini-line"></div>
+
+            <p>
+              Café Heighné was founded in 2026 by Hanylyn Rivera, a 3rd year BS in Computer Engineering student
+              with a vision of creating a café brand that blends elegance, comfort, and identity into one
+              memorable experience.
+            </p>
+
+            <p>
+              More than just a coffee concept, Café Heighné represents creativity, ambition, and personal
+              expression. From its visual branding to its curated menu and merchandise, every detail was
+              thoughtfully designed to reflect warmth, sophistication, and modern café culture.
+            </p>
+
+            <div class="stats">
+              <div class="stat">
+                <h3>2026</h3>
+                <p>Established</p>
+              </div>
+              <div class="stat">
+                <h3>1</h3>
+                <p>Founder</p>
+              </div>
+              <div class="stat">
+                <h3>9</h3>
+                <p>Signature Items</p>
+              </div>
+              <div class="stat">
+                <h3>4</h3>
+                <p>Core Collections</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section section-light" id="menu">
+      <div class="container">
+        <div class="section-label">
+          <span></span>
+          <p>Full Menu</p>
+          <span></span>
+        </div>
+
+        <h2 class="section-title">
+          Café Heighné <em>Menu</em>
+        </h2>
+
+        <p class="section-text">
+          A curated selection of coffee, signature drinks, pastries, desserts, and light meals
+          crafted to elevate every visit.
+        </p>
+
+        <div class="menu-tabs">
+          <button class="menu-tab active" data-menu="classics">Classics</button>
+          <button class="menu-tab" data-menu="signature">Signature Drinks</button>
+          <button class="menu-tab" data-menu="iced">Iced Coffee</button>
+          <button class="menu-tab" data-menu="noncoffee">Non-Coffee</button>
+          <button class="menu-tab" data-menu="pastries">Pastries</button>
+          <button class="menu-tab" data-menu="desserts">Desserts</button>
+          <button class="menu-tab" data-menu="meals">Light Meals</button>
+          <button class="menu-tab" data-menu="addons">Add-Ons</button>
+        </div>
+
+        <div class="menu-panels">
+          <div class="menu-panel active" id="menu-classics">
+            <div class="menu-card-grid">
+              <article class="menu-card">
+                <div class="menu-item-top"><h3>Americano</h3><span>₱90</span></div>
+                <p>Classic espresso diluted with hot water for a clean, bold finish.</p>
+                <button class="menu-order-btn">Add to Order</button>
+              </article>
+              <article class="menu-card">
+                <div class="menu-item-top"><h3>Cappuccino</h3><span>₱120</span></div>
+                <p>Balanced espresso with steamed milk and a rich layer of foam.</p>
+                <button class="menu-order-btn">Add to Order</button>
+              </article>
+              <article class="menu-card">
+                <div class="menu-item-top"><h3>Latte</h3><span>₱130</span></div>
+                <p>Smooth espresso blended with silky steamed milk.</p>
+                <button class="menu-order-btn">Add to Order</button>
+              </article>
+              <article class="menu-card">
+                <div class="menu-item-top"><h3>Flat White</h3><span>₱130</span></div>
+                <p>A velvety coffee with concentrated espresso and fine microfoam.</p>
+                <button class="menu-order-btn">Add to Order</button>
+              </article>
+              <article class="menu-card">
+                <div class="menu-item-top"><h3>Spanish Latte</h3><span>₱150</span></div>
+                <p>A creamy latte sweetened for a richer and more indulgent profile.</p>
+                <button class="menu-order-btn">Add to Order</button>
+              </article>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="menu-signature">
+            <div class="menu-card-grid">
+              <article class="menu-card featured-menu-card">
+                <div class="menu-feature-badge">Flagship</div>
+                <div class="menu-item-top"><h3>The Heighné Ritual</h3><span>₱220</span></div>
+                <p>Rich espresso blended with creamy milk, a hint of caramel, and a touch of golden sweetness—our flagship indulgence.</p>
+                <button class="menu-order-btn">Add to Order</button>
+              </article>
+              <article class="menu-card">
+                <div class="menu-item-top"><h3>Heighné Gold</h3><span>₱200</span></div>
+                <p>A smooth latte topped with caramel drizzle and golden accents, perfect for a luxurious treat.</p>
+                <button class="menu-order-btn">Add to Order</button>
+              </article>
+              <article class="menu-card">
+                <div class="menu-item-top"><h3>Heyn Reserve</h3><span>₱200</span></div>
+                <p>Bold, full-bodied espresso layered with silky milk, designed for true coffee lovers.</p>
+                <button class="menu-order-btn">Add to Order</button>
+              </article>
+              <article class="menu-card">
+                <div class="menu-item-top"><h3>Velvet Heighné</h3><span>₱180</span></div>
+                <p>A creamy, velvety latte with subtle hints of vanilla—soft, comforting, and Instagram-ready.</p>
+                <button class="menu-order-btn">Add to Order</button>
+              </article>
+              <article class="menu-card">
+                <div class="menu-item-top"><h3>Midnight Heyn</h3><span>₱180</span></div>
+                <p>Decadent dark mocha with a chocolate kick, perfect for late-night cravings.</p>
+                <button class="menu-order-btn">Add to Order</button>
+              </article>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="menu-iced">
+            <div class="menu-card-grid">
+              <article class="menu-card"><div class="menu-item-top"><h3>Iced Americano</h3><span>₱120</span></div><p>Refreshing and bold over ice.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Iced Latte</h3><span>₱150</span></div><p>Creamy espresso and milk served chilled.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Iced Spanish Latte</h3><span>₱160</span></div><p>A sweeter iced favorite with a rich, smooth finish.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Iced Mocha</h3><span>₱160</span></div><p>Chocolate and coffee in a cool, indulgent blend.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Cold Brew</h3><span>₱180</span></div><p>Slow-steeped for a naturally smooth and mellow strength.</p><button class="menu-order-btn">Add to Order</button></article>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="menu-noncoffee">
+            <div class="menu-card-grid">
+              <article class="menu-card"><div class="menu-item-top"><h3>Hot Chocolate</h3><span>₱120</span></div><p>Warm, rich cocoa for a comforting treat.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Iced Chocolate</h3><span>₱130</span></div><p>Chilled chocolate drink with a smooth creamy taste.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Matcha Latte</h3><span>₱150</span></div><p>Earthy, creamy, and delicately balanced.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Iced Matcha Latte</h3><span>₱160</span></div><p>A refreshing matcha blend served cold.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Vanilla Milk</h3><span>₱120</span></div><p>Soft vanilla sweetness in a creamy milk base.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Caramel Milk</h3><span>₱130</span></div><p>A smooth and sweet caramel-infused milk drink.</p><button class="menu-order-btn">Add to Order</button></article>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="menu-pastries">
+            <div class="menu-card-grid">
+              <article class="menu-card"><div class="menu-item-top"><h3>Butter Croissant</h3><span>₱80</span></div><p>Flaky and buttery, baked for a classic café pairing.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Chocolate Croissant</h3><span>₱100</span></div><p>Layers of pastry filled with rich chocolate.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Blueberry Muffin</h3><span>₱120</span></div><p>Soft muffin packed with sweet blueberry notes.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Banana Bread</h3><span>₱100</span></div><p>Moist, comforting, and perfect with coffee.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Cinnamon Roll</h3><span>₱130</span></div><p>Soft pastry with warm cinnamon sweetness.</p><button class="menu-order-btn">Add to Order</button></article>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="menu-desserts">
+            <div class="menu-card-grid">
+              <article class="menu-card"><div class="menu-item-top"><h3>Cheesecake</h3><span>₱180</span></div><p>Rich and creamy with a smooth, delicate finish.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Chocolate Cake</h3><span>₱160</span></div><p>Decadent cake layered with deep chocolate flavor.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Tiramisu</h3><span>₱220</span></div><p>A luxurious coffee dessert with creamy layers.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Brownies</h3><span>₱120</span></div><p>Dense, fudgy, and indulgently chocolatey.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Cookie Stack</h3><span>₱140</span></div><p>A satisfying sweet stack with café-style warmth.</p><button class="menu-order-btn">Add to Order</button></article>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="menu-meals">
+            <div class="menu-card-grid">
+              <article class="menu-card">
+                <div class="menu-item-top"><h3>Creamy Carbonara</h3><span>₱250</span></div>
+                <p>Rich, creamy pasta perfect for a satisfying café meal.</p>
+                <button class="menu-order-btn">Add to Order</button>
+              </article>
+              <article class="menu-card">
+                <div class="menu-item-top"><h3>Aglio e Olio</h3><span>₱200</span></div>
+                <p>A light pasta dish with garlic, oil, and elegant simplicity.</p>
+                <button class="menu-order-btn">Add to Order</button>
+              </article>
+              <article class="menu-card">
+                <div class="menu-item-top"><h3>Chicken Sandwich</h3><span>₱180</span></div>
+                <p>A savory sandwich with tender chicken and fresh layers.</p>
+                <button class="menu-order-btn">Add to Order</button>
+              </article>
+              <article class="menu-card">
+                <div class="menu-item-top"><h3>Tuna Melt</h3><span>₱200</span></div>
+                <p>Toasted and cheesy with a rich tuna filling.</p>
+                <button class="menu-order-btn">Add to Order</button>
+              </article>
+              <article class="menu-card">
+                <div class="menu-item-top"><h3>Ham &amp; Cheese Croissant</h3><span>₱150</span></div>
+                <p>Flaky pastry filled with savory ham and cheese.</p>
+                <button class="menu-order-btn">Add to Order</button>
+              </article>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="menu-addons">
+            <div class="menu-card-grid">
+              <article class="menu-card"><div class="menu-item-top"><h3>Extra Espresso Shot</h3><span>₱40</span></div><p>Boost your drink with an extra kick of espresso.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Oat Milk</h3><span>₱50</span></div><p>A creamy dairy-free alternative.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Almond Milk</h3><span>₱50</span></div><p>Nutty, smooth, and light.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Caramel Syrup</h3><span>₱30</span></div><p>Add sweetness and depth to any drink.</p><button class="menu-order-btn">Add to Order</button></article>
+              <article class="menu-card"><div class="menu-item-top"><h3>Vanilla Syrup</h3><span>₱30</span></div><p>A soft vanilla note for a sweeter finish.</p><button class="menu-order-btn">Add to Order</button></article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products section-dark" id="products">
+      <div class="container">
+        <div class="section-label">
+          <span></span>
+          <p>Featured Merchandise</p>
+          <span></span>
+        </div>
+
+        <h2 class="section-title light">
+          Made for Everyday <em>Elegance</em>
+        </h2>
+
+        <p class="section-text light">
+          A premium collection of drinkware and lifestyle pieces. Each item features curated
+          color variations while keeping the presentation clean and focused.
+        </p>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-image-wrap">
+              <img
+                id="productImage-cup"
+                class="product-image"
+                src="assets/images/cup_black.png"
+                alt="Classic Cup in black"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-head">
+                <h3>Classic Cup</h3>
+                <span>₱199</span>
+              </div>
+              <div class="product-line"></div>
+              <p>
+                A sleek branded cup with a refined café look for elegant everyday sipping.
+              </p>
+
+              <div class="product-options">
+                <p class="option-label">Color</p>
+                <div class="color-options">
+                  <button class="color-btn active" data-product="cup" data-image="assets/images/cup_black.png" data-alt="Classic Cup in black">Black</button>
+                  <button class="color-btn" data-product="cup" data-image="assets/images/cup_brown.png" data-alt="Classic Cup in brown">Brown</button>
+                  <button class="color-btn" data-product="cup" data-image="assets/images/cup_cream.png" data-alt="Classic Cup in cream">Cream</button>
+                </div>
+              </div>
+
+              <button class="btn btn-product">Add to Order</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-wrap">
+              <img
+                id="productImage-mug"
+                class="product-image"
+                src="assets/images/mug_black.png"
+                alt="Classic Mug in black"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-head">
+                <h3>Classic Mug</h3>
+                <span>₱249</span>
+              </div>
+              <div class="product-line"></div>
+              <p>
+                A minimalist ceramic mug with a premium finish for cozy café-inspired rituals.
+              </p>
+
+              <div class="product-options">
+                <p class="option-label">Color</p>
+                <div class="color-options">
+                  <button class="color-btn active" data-product="mug" data-image="assets/images/mug_black.png" data-alt="Classic Mug in black">Black</button>
+                  <button class="color-btn" data-product="mug" data-image="assets/images/mug_brown.png" data-alt="Classic Mug in brown">Brown</button>
+                  <button class="color-btn" data-product="mug" data-image="assets/images/mug_cream.png" data-alt="Classic Mug in cream">Cream</button>
+                </div>
+              </div>
+
+              <button class="btn btn-product">Add to Order</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-wrap">
+              <img
+                id="productImage-tote"
+                class="product-image"
+                src="assets/images/tote_black.png"
+                alt="Canvas Tote in black"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-head">
+                <h3>Canvas Tote</h3>
+                <span>₱299</span>
+              </div>
+              <div class="product-line"></div>
+              <p>
+                A stylish everyday tote that carries the Café Heighné brand with ease and elegance.
+              </p>
+
+              <div class="product-options">
+                <p class="option-label">Color</p>
+                <div class="color-options">
+                  <button class="color-btn active" data-product="tote" data-image="assets/images/tote_black.png" data-alt="Canvas Tote in black">Black</button>
+                  <button class="color-btn" data-product="tote" data-image="assets/images/tote_brown.png" data-alt="Canvas Tote in brown">Brown</button>
+                  <button class="color-btn" data-product="tote" data-image="assets/images/tote_cream.png" data-alt="Canvas Tote in cream">Cream</button>
+                </div>
+              </div>
+
+              <button class="btn btn-product">Add to Order</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-badge">Best Seller</div>
+            <div class="product-image-wrap">
+              <img
+                id="productImage-tumbler"
+                class="product-image"
+                src="assets/images/tumbler_black.png"
+                alt="Signature Tumbler in black"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-head">
+                <h3>Signature Tumbler</h3>
+                <span>₱349</span>
+              </div>
+              <div class="product-line"></div>
+              <p>
+                A sleek insulated tumbler made for coffee on the go with everyday Café Heighné elegance.
+              </p>
+
+              <div class="product-options">
+                <p class="option-label">Color</p>
+                <div class="color-options">
+                  <button class="color-btn active" data-product="tumbler" data-image="assets/images/tumbler_black.png" data-alt="Signature Tumbler in black">Black</button>
+                  <button class="color-btn" data-product="tumbler" data-image="assets/images/tumbler_brown.png" data-alt="Signature Tumbler in brown">Brown</button>
+                  <button class="color-btn" data-product="tumbler" data-image="assets/images/tumbler_cream.png" data-alt="Signature Tumbler in cream">Cream</button>
+                </div>
+              </div>
+
+              <button class="btn btn-product">Add to Order</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-light" id="contact">
+      <div class="container">
+        <div class="section-label">
+          <span></span>
+          <p>Find Us</p>
+          <span></span>
+        </div>
+
+        <h2 class="section-title">
+          Visit <em>Café Heighné</em>
+        </h2>
+
+        <p class="section-text narrow">
+          We would love to welcome you. Come in, sit down, and let us serve something memorable.
+        </p>
+
+        <div class="contact-grid">
+          <div class="map-card">
+            <div class="map-art">
+              <div class="map-grid-lines"></div>
+              <div class="map-road road-1"></div>
+              <div class="map-road road-2"></div>
+              <div class="map-road road-3"></div>
+              <div class="map-road road-4"></div>
+
+              <div class="map-pin-wrap">
+                <div class="map-pin">⌖</div>
+                <div class="map-label">Café Heighné</div>
+              </div>
+            </div>
+            <div class="map-footer">
+              <p>Sta. Mesa, Manila</p>
+              <a href="#">Get Directions →</a>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">⌂</div>
+                <div>
+                  <h3>Address</h3>
+                  <p>Sta. Mesa<br />Manila, Philippines</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">✆</div>
+                <div>
+                  <h3>Phone</h3>
+                  <p>+63 912 345 6789</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">✉</div>
+                <div>
+                  <h3>Email</h3>
+                  <p>hello@cafeheighne.com</p>
+                </div>
+              </div>
+
+              <div class="hours-card">
+                <h3>Opening Hours</h3>
+                <div class="hour-row"><span>Mon – Fri</span><strong>7:00 AM – 9:00 PM</strong></div>
+                <div class="hour-row"><span>Saturday</span><strong>8:00 AM – 10:00 PM</strong></div>
+                <div class="hour-row"><span>Sunday</span><strong>9:00 AM – 7:00 PM</strong></div>
+              </div>
+            </div>
+
+            <div class="socials">
+              <p>Follow Our Journey</p>
+              <div class="social-buttons">
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Twitter">X</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo_gold.png" alt="Café Heighné logo" class="footer-logo" />
+          <p>
+            Where every sip is a journey. Crafted with intention, presented with elegance.
+          </p>
+          <div class="footer-socials">
+            <a href="#">IG</a>
+            <a href="#">FB</a>
+            <a href="#">X</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Hours</h4>
+          <ul class="hours-list">
+            <li><span>Mon – Fri</span><strong>7AM – 9PM</strong></li>
+            <li><span>Saturday</span><strong>8AM – 10PM</strong></li>
+            <li><span>Sunday</span><strong>9AM – 7PM</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-line"></div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Café Heighné. All rights reserved.</p>
+        <p>Crafted with ♥ in warm tones.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
